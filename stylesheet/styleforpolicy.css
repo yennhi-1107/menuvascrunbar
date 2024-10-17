@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Áp dụng font Roboto */
+    margin: 0;
+    padding: 20px;
+    background-color:rgb(252, 255, 230);
+    font-size: 1.07142857rem;
+    text-align: justify;
+}
+.notice_content1{
+    position: relative;
+    padding-top: 2.5rem;
+}
+.notice_content2{
+    position: relative;
+    padding-top: 2.5rem;
+}
+.notice_section{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+h1, h2, h3 {
+    color:rgb(0, 0, 0);
+    text-align: center; /* Căn giữa tên các phần */}
+
+.otnotice-version {
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.terms_condition{
+    position: relative;
+    padding-top: 2.5rem;
+}
+.terms_condition_section{
+    margin-left: 70px;
+    margin-right: 70px;
+}

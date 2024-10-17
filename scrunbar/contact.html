@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Microsoft Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/styleforcontact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>BunnyBersgurs</title>
+</head>
+<body>
+<section class="contact">
+    <div class="contact-container">
+        <h1>CONTACT US</h1>
+        <p>806 QL22, Ward Tan Xuan, Hoc Mon District, Ho Chi Minh City</p>
+        
+        <div class="contact-info">
+            <div>
+                <a href="mailto:example@example.com"></button>
+                    <img src="../img/email.png" alt="Email"><span>Send an email</span>
+                </a>
+            </div>
+            <div>
+                <a href="tel:+84812345678">
+                    <img src="../img/phone.png" alt="Phone"> <span>(84-28) 7890 0789</span>
+                </a>
+            </div>
+        </div>
+        
+
+        <form id="contactForm">
+            <h2>CONTACT FORM</h2>
+
+            <div class="form-row">
+                <input type="text" id="fullName" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-row">
+                <input type="text" id="phoneNumber" placeholder="Phone Number *" required>
+            </div>
+
+            <div class="address-section">
+                <h3>Address</h3>
+                <div class="form-row">
+                    <select id="province">
+                        <option value="">Province/City</option>
+                        <option value="HCMC">Ho Chi Minh City</option>
+                        <option value="Hanoi">Hanoi</option>
+                        <option value="Danang">Da Nang</option>
+                        <option value="Cantho">Can Tho</option>
+                        <option value="Haiphong">Hai Phong</option>
+                    </select>
+                    <select id="district">
+                        <option value="">District</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <select id="ward">
+                        <option value="">Ward</option>
+                    </select>
+                    <input type="text" id="address" placeholder="Address (Number - Street)">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <textarea id="content" placeholder="Enter content here..."></textarea>
+            </div>
+
+            <button type="submit" id="submitButton" class="submit-btn" disabled>Submit</button>
+        </form>
+    </div>
+</section>
+<script src="../java/script.js"></script>
+</body>
+</html>

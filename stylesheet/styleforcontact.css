@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Áp dụng font Roboto */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-info div {
+    margin: 0 10px;
+}
+
+.contact-info a {
+    display: inline-flex; /* Chuyển sang inline-flex để đảm bảo nút nằm ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 5px 10px; /* Thay đổi padding để giảm chiều cao nút */
+    background-color: white; /* Màu nền của nút */
+    color: black; /* Màu chữ là đen */
+    border: 1px solid #ccc; /* Đặt viền màu xám nhạt mặc định */
+    border-radius: 5px; /* Bo góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    height: 40px; /* Đặt chiều cao cố định */
+    line-height: 1; /* Căn chỉnh chiều cao chữ */
+    width: 150px; /* Đặt chiều rộng cho các nút */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
+    font-size: 14px; /* Giảm kích thước chữ */
+    margin: 0 5px; /* Thêm khoảng cách giữa các nút */
+}
+
+.contact-info a:hover {
+    border-color: #e31837; /* Đổi màu viền thành đỏ khi hover */
+}
+
+.contact-info img {
+    width: 20px; /* Giữ kích thước icon */
+    height: 20px; /* Giữ kích thước icon */
+    margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row > div {
+    margin-right: 10px; /* Thêm khoảng cách giữa các trường trong cùng một hàng */
+}
+
+input, select, textarea {
+    width: 100%; /* Đặt độ rộng trường là 100% */
+    padding: 10px;
+    border: 1px solid #ccc; /* Viền xám nhạt cho các trường nhập liệu */
+    border-radius: 5px;
+    font-size: 14px;
+    margin:10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100px; /* Giữ độ rộng nút submit là 100px */
+    margin: 10px auto; /* Giữ nút ở giữa */
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row > div {
+        margin-right: 0; /* Xóa khoảng cách khi ở chế độ di động */
+        margin-bottom: 10px; /* Thêm khoảng cách dưới cùng cho các trường khi ở chế độ di động */
+    }
+}

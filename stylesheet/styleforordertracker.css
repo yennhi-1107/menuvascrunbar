@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Áp dụng font Roboto */
+    padding: 20px;
+    background-color:rgb(252, 255, 230);
+    font-size: 1.07142857rem;
+    text-align: justify;
+    min-height: 100vh;
+}
+.container {
+    background-color: #fff;
+    max-width: 600px;
+    width:100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.order-tracker{
+    width: 550px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+form { 
+    display: block;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: .35714286rem;
+    width:100%;
+}
+input[type="email"], input[type="text"] {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    outline: none;
+    width:100%;
+}
+input[type="email"].error-input, input[type="text"].error-input {
+    border-bottom: 2px solid red;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.submit-btn {
+background-color: #e31837;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 30px; /* Tăng độ cong của nút */
+cursor: pointer;
+font-size: 16px;
+text-align: center;
+width:100%;
+}
+
+.submit-btn:hover {
+background-color: #c41530;
+}
+
+.notice {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #555;
+    line-height: 1.5; /* Giãn dòng cho dễ đọc */
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Giảm padding trên màn hình nhỏ */
+    }
+    
+    input[type="email"], input[type="text"] {
+        font-size: 14px; /* Giảm kích thước chữ trên màn hình nhỏ */
+    }
+    
+    .submit-btn {
+        font-size: 14px; /* Giảm kích thước chữ của nút bấm trên màn hình nhỏ */
+    }
+}
